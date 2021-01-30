@@ -1,0 +1,18 @@
+﻿<Window x:Class="OxyPlot.Dark.Wpf.WindowTextEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OxyPlot.Dark.Wpf"
+        mc:Ignorable="d" WindowStyle="ToolWindow" WindowStartupLocation="CenterOwner"
+        Title="Text Editor" Height="200" Width="200" MaxHeight="200" MaxWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="29"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="textBox" TextWrapping="Wrap" Text="Text here"/>
+        <Button Content="OK" HorizontalAlignment="Right" Width="75" Margin="0,5,5,5" Grid.Row="1" 
+                Click="Button_Click" IsDefault="True"/>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="OxyPlot.Dark.Wpf.PlotViewContextMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OxyPlot.Dark.Wpf"
+             mc:Ignorable="d" d:DesignWidth="100" Height="125">
+    <Grid Background="#1C1C1E">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Name="rowDefinitionDelete" Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label Name="labelType" Content="Menu" Grid.Row="0" FontSize="11" />
+        <Button Name="ButtonDelete" Content="Delete" FontSize="11" Grid.Row="1" Click="Button_Click"/>
+        <Button Name="Button1" Content="Save As..." FontSize="11" Grid.Row="2" Click="Button_Click"/>
+        <Button Name="Button2" Content="Copy to clipboard" FontSize="11" Grid.Row="3" Click="Button_Click"/>
+        <Button Name="Button3" Content="Button3" FontSize="11" Grid.Row="4" Click="Button_Click"/>
+
+        <Border BorderBrush="#A6A7AC" BorderThickness="1" Grid.RowSpan="6"/>
+    </Grid>
+</UserControl>
