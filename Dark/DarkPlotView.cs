@@ -13,7 +13,7 @@ using System.Windows.Input;
 namespace OxyPlot.Dark.Wpf
 {
     /// <summary>
-    /// https://csharp.hotexamples.com/examples/OxyPlot/TrackerHitResult/-/php-trackerhitresult-class-examples.html
+    /// 
     /// </summary>
     public class DarkPlotView : PlotView
     {
